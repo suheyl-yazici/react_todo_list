@@ -34,7 +34,7 @@ const Main = ({todoItem, setTodoList}) => {
 
 
   return (
-    <div key={todoItem.id} className="d-flex justify-content-between mt-3 bg-light bg-gradient">
+    <div key={todoItem.id} className="d-flex justify-content-between mt-3">
         <div className='d-flex w-75'>
             <Form.Check
                 type="checkbox"

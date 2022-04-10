@@ -18,13 +18,13 @@ const Header = () => {
 
     
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-        <h1 className="mt-5 ">To Do List</h1>
+    <div className="d-flex flex-column justify-content-center align-items-center mt-5 text-capitalize fs-4" style={{fontFamily:"Lobster Two"}}>
+        <h1 className="mt-5 fw-bold">TO DO LİST</h1>
         <div className="d-flex w-50 mt-5">
-            <FormControl size="lg" type="text" placeholder="To do Input" value={newtodo}
+            <FormControl placeholder="To Do Input" value={newtodo}
                 onChange={(e) => setNewtodo(e.target.value)} />
 
-            <Button className="ms-5" variant="danger" onClick={() => addTodo()}>Add To do</Button>
+            <Button className="ms-3" variant="primary" onClick={() => addTodo()}>Add To do</Button>
         </div>
         <div className="mt-5 w-75">
             {todoList.map((todoItem) => (
